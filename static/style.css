@@ -1,0 +1,67 @@
+body {
+  background: #0c0c0c;
+  color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+nav {
+  padding: 1rem;
+  background: #111;
+  border-bottom: 2px solid #c89b3c;
+  text-align: center;
+}
+nav h1 { color: #c89b3c; text-transform: uppercase; letter-spacing: 2px; }
+main { padding: 2rem; max-width: 900px; margin: auto; }
+input, button { padding: 0.5rem; margin: 0.2rem; border-radius: 4px; border: none; }
+button { background: #c89b3c; color: white; cursor: pointer; }
+button:hover { opacity: 0.85; }
+
+ul#expense-list { list-style: none; padding: 0; }
+ul#expense-list li {
+  background: #222;
+  padding: 0.7rem;
+  margin: 0.3rem 0;
+  border: 1px solid #333;
+  border-radius: 6px;
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+  display: flex; justify-content: space-between; align-items: center;
+}
+@keyframes fadeIn { to { opacity: 1; } }
+
+.delete-btn { background: #e74c3c; padding: 0.3rem 0.7rem; border-radius: 4px; cursor: pointer; color: white; }
+
+.summary-section { margin-top: 2rem; }
+.summary-section {
+  margin-top: 2rem;
+}
+#toggleChartBtn {
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+#toggleChartBtn:hover {
+  opacity: 0.85;
+}
+.clear-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.clear-btn:hover {
+  opacity: 0.85;
+}
+
+#total-container {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: right;
+}
